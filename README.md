@@ -12,3 +12,5 @@ An fake phonebook with stack 100% Vue.js. Take a look the stack:
 * [Axios](https://github.com/mzabriskie/axios) for cliente http
 * [UI-Names](https://uinames.com/) for fake api
 * [Font-awesome](http://fontawesome.io/) for fonts icons
+
+We used the webpack template for init project
