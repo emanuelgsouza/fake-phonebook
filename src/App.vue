@@ -1,28 +1,18 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div class="columns is-centered">
+    <div class="column is-6">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 export default {
-  name: 'app',
-  components: {
-    Hello
-  }
+  name: 'app'
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+  @import "../node_modules/bulma/sass/utilities/mixins"
+  @import "../node_modules/bulma/sass/grid/columns"
 </style>
