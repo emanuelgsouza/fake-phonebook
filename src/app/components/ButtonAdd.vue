@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/home">
+  <router-link to="/add">
     <ui-fab
       class="button-add"
       color="primary"

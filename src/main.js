@@ -4,7 +4,9 @@ import VueRouter from 'vue-router'
 import routes from './routes'
 import KeenUI from 'keen-ui'
 import 'keen-ui/dist/keen-ui.min.css'
+import VeeValidate from 'vee-validate'
 
+Vue.use(VeeValidate)
 Vue.use(VueRouter)
 Vue.use(KeenUI)
 
