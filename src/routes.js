@@ -8,6 +8,10 @@ export default [
     component: require('./app/Add')
   },
   {
+    path: '/search',
+    component: require('./app/Search')
+  },
+  {
     path: '*',
     redirect: '/home'
   }
