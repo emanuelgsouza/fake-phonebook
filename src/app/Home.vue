@@ -20,10 +20,13 @@
           <a href="https://github.com/niksmr/vue-masked-input">Vue-masked-input</a>
         </li>
         <li>
-          <a href="https://github.com/kazupon/vue-validator">Vue-validate</a>
+          <a href="https://github.com/logaretm/vee-validate">Vee-validate</a>
         </li>
         <li>
           <a href="https://github.com/hilongjw/vue-datepicker">Vue-datepiker</a>
+        </li>
+        <li>
+          <a href="https://github.com/eliep/vue-avatar">Vue-avatar</a>
         </li>
         <li>
           <a href="https://github.com/mzabriskie/axios">Axios</a>
@@ -33,19 +36,19 @@
         </li>
       </ul>
     </div>
-    <ButtonAdd></ButtonAdd>
+    <HomeMenu></HomeMenu>
     <FooterHome></FooterHome>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
-import ButtonAdd from './components/ButtonAdd'
+import HomeMenu from './components/Menu'
 import FooterHome from './components/Footer'
 
 export default {
   name: 'home',
-  components: { HomeHeader, ButtonAdd, FooterHome }
+  components: { HomeHeader, HomeMenu, FooterHome }
 }
 </script>
 

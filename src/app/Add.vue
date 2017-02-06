@@ -52,14 +52,6 @@
       buttonType="button"
       @click="openModal"> Confirmar Contato </ui-button>
 
-    <router-link to="/search">
-      <ui-button
-        class="btn-confirm"
-        color="primary"
-        size="large"
-        buttonType="button"> Pesquisar Contatos </ui-button>
-    </router-link>
-
       <ui-modal
         ref="modal"
         :title="title">
@@ -75,18 +67,20 @@
             @click="closeModal">Close</ui-button>
         </div>
       </ui-modal>
+    <HomeMenu></HomeMenu>
     <FooterHome></FooterHome>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
+import HomeMenu from './components/Menu'
 import FooterHome from './components/Footer'
 import myDatepicker from 'vue-datepicker'
 
 export default {
   name: 'add',
-  components: { HomeHeader, FooterHome, myDatepicker },
+  components: { HomeHeader, FooterHome, HomeMenu, myDatepicker },
   data () {
     return {
       name: '',
