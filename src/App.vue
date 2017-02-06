@@ -7,8 +7,13 @@
 </template>
 
 <script>
+import { storage } from './helpers'
+
 export default {
-  name: 'app'
+  name: 'app',
+  mounted () {
+    storage()
+  }
 }
 </script>
 

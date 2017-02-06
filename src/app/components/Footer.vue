@@ -13,6 +13,5 @@ export default {
   .footer
     padding: .5em
     text-align: center
-    color: white
-    background-color: #181818
+    border-top: 2px solid #181818
 </style>
