@@ -1,40 +1,40 @@
 <template>
   <div class="container-menu">
-    <ui-icon-button
+    <ui-fab
       icon="menu"
-      size="large"
+      size="normal"
       type="primary"
       @click="classToggle = !classToggle">
-    </ui-icon-button>
+    </ui-fab>
     <router-link to="/add">
-      <ui-icon-button
+      <ui-fab
         class="menu add"
         :class="{ 'is-active': classToggle }"
         icon="add"
-        size="large"
+        size="normal"
         color="green"
         type="primary">
-      </ui-icon-button>
+      </ui-fab>
     </router-link>
     <router-link to="/search">
-      <ui-icon-button
+      <ui-fab
         class="menu search"
         :class="{ 'is-active': classToggle }"
         icon="search"
-        size="large"
+        size="normal"
         color="primary"
         type="primary">
-      </ui-icon-button>
+      </ui-fab>
     </router-link>
     <router-link to="/home">
-      <ui-icon-button
+      <ui-fab
         class="menu home"
         :class="{ 'is-active': classToggle }"
         icon="home"
-        size="large"
+        size="normal"
         color="primary"
         type="primary">
-      </ui-icon-button>
+      </ui-fab>
     </router-link>
   </div>
 </template>
@@ -62,6 +62,7 @@ export default {
     bottom: 0
     right: 0
     opacity: 0
+    transition: all .3s ease
     z-index: -2
 
   .menu.is-active
@@ -69,12 +70,12 @@ export default {
     z-index: 0
 
     &.add
-      left: $left + 1.3em
+      left: $left + 1.7em
 
     &.search
-      left: $left + 5em
+      left: $left + 6em
 
     &.home
-      top: $top + 1.8em
+      top: $top + 2.2em
 
 </style>
