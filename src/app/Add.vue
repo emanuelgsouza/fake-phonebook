@@ -57,7 +57,7 @@
         :title="title">
         <h2> Dados: </h2>
         <ul>
-          <li v-for="(value, key) in dados"> {{ key }} - {{ value }} </li>
+          <li v-for="(value, key) in contact"> {{ key }} - {{ value }} </li>
         </ul>
 
         <div slot="footer">
@@ -73,6 +73,7 @@
 </template>
 
 <script>
+import { insertContact } from '../helpers'
 import HomeHeader from './components/Header'
 import HomeMenu from './components/Menu'
 import FooterHome from './components/Footer'
@@ -87,7 +88,7 @@ export default {
       number: '',
       email: '',
       birthday: '',
-      dados: {},
+      contact: {},
       title: '',
       option: {
         type: 'day',
@@ -117,12 +118,14 @@ export default {
           this.title = 'Não é possível inserir os dados, há campos em branco'
         } else {
           this.title = 'Contato adicinado com sucesso'
-          this.dados = {
+          const contact = {
             Nome: this.name,
             Aniversario: this.birthday,
             Email: this.email,
             Telefone: this.number
           }
+          this.contact = contact
+          insertContact(contact)
         }
       }
       this.$refs['modal'].open()
