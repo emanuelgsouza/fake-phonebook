@@ -92,8 +92,8 @@ export default {
       title: '',
       option: {
         type: 'day',
-        week: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
-        month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        week: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab', 'Dom'],
+        month: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
         format: 'DD-MM-YYYY',
         placeholder: 'Data de Aniversário',
         inputStyle: {
@@ -105,6 +105,10 @@ export default {
           'box-shadow': '0 1px 3px 0 rgba(0, 0, 0, 0.2)',
           'border-radius': '2px',
           'color': '#5F5F5F'
+        },
+        buttons: {
+          ok: 'Confirmar',
+          cancel: 'Cancelar'
         }
       }
     }
