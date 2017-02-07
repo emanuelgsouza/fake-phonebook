@@ -11,13 +11,7 @@
           <a href="https://github.com/JosephusPaye/Keen-UI">Keen-UI</a>
         </li>
         <li>
-          <a href="http://bulma.io/">Bulma</a>
-        </li>
-        <li>
           <a href="https://github.com/vuejs/vue-router">Vue-Router</a>
-        </li>
-        <li>
-          <a href="https://github.com/niksmr/vue-masked-input">Vue-masked-input</a>
         </li>
         <li>
           <a href="https://github.com/logaretm/vee-validate">Vee-validate</a>
@@ -32,7 +26,13 @@
           <a href="https://github.com/mzabriskie/axios">Axios</a>
         </li>
         <li>
+          <a href="http://bulma.io/">Bulma</a>
+        </li>
+        <li>
           <a href="https://uinames.com/">UI-Names</a>
+        </li>
+        <li>
+          <a href="https://material.io/icons/">Material Design Icons</a>
         </li>
       </ul>
     </div>
